@@ -13,7 +13,7 @@
         <java.version>17</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <spring-boot.version>2.6.13</spring-boot.version>
+        <spring-boot.version>2.7.14</spring-boot.version>
         <commons.version>2.6</commons.version>
         <druid.version>1.2.15</druid.version>
         <mybatisPlus.version>3.5.3.1</mybatisPlus.version>
@@ -22,6 +22,8 @@
         <minio.version>8.4.4</minio.version>
         <okhttp.version>4.10.0</okhttp.version>
         <guava.version>31.1-jre</guava.version>
+        <aviator.version>5.3.3</aviator.version>
+        <mysql.version>8.0.30</mysql.version>
     </properties>
     <dependencies>
         <!-- 基础工具类 -->
@@ -78,6 +80,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.version}</version>
         </dependency>
         <!-- 数据库连接池 -->
         <dependency>
@@ -104,6 +107,13 @@
             <groupId>com.squareup.okhttp3</groupId>
             <artifactId>okhttp</artifactId>
             <version>${okhttp.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.googlecode.aviator/aviator -->
+        <dependency>
+            <groupId>com.googlecode.aviator</groupId>
+            <artifactId>aviator</artifactId>
+            <version>${aviator.version}</version>
         </dependency>
 
 
